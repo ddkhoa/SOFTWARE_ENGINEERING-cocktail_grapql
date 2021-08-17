@@ -31,8 +31,8 @@ for (let i = 0; i < rawData.length; i = i + 1) {
         }
         item.ingredients = itemIngredients;
 
-        result.push(item);
     }
+    result.push(item);
 }
 
 fs.writeFileSync("data/cocktail.json", JSON.stringify(result));
